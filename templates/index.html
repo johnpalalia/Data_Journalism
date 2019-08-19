@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Is There a Link Between Household Income and Behavioral Risk Factors?</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h1>Is There a Link Between Household Income and Behavioral Risk Factors?</h1>
+
+                <p>In this D3 document, we explore certain associations between demographics and behavioral risk factors using survey data collected in 2014.<p>
+                
+                <p>The Demographic data was sourced from the U.S. Census <a href="https://factfinder.census.gov/faces/nav/jsf/pages/searchresults.xhtml">American FactFinder tool</a>.  The Behavioral Risk Factor data was sourced from the CDC's <a href="https://chronicdata.cdc.gov/Behavioral-Risk-Factors/BRFSS-2014-Overall/5ra3-ixqq">Behavioral Risk Factor Surveillance System</a>.</p>
+                
+                <p>Each marker represents an individual state in the USA.  Click on any of the axis titles to explore the data.</p>
+            </div>
+
+
+            <div class="col-md-10 col-md-offset-1">
+                <hr>
+                <div class="chart">
+                </div>
+
+                <hr>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+    
+    <p>
+    <center>This visualization was created by <a href="https://www.linkedin.com/in/gibraan-negron-2ab17214b/">Gibraan Negron</a> using <a href="https://d3js.org/">D3 (Data-Driven Documents)</a></center>
+	</p>
+	<p><center>
+	<a href="https://github.com/gnnj/Data_Journalism.git">Explore my source code and the datasets on my GitHub repository
+	</a></center>
+	</p>
+    <script src="{{url_for('static',filename='js/app.js')}}"></script>
+
+</body>
+
+</html>
